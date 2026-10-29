@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0D3B2E;
+  --color-secondary: #4E9F85;
+  --color-tertiary: #E6F7F0;
+  --color-neutral: #5A6E65;
+  --color-mintbg: #F4FAF7;
+
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+}
+
+:root {
+  --color-primary: #0D3B2E;
+  --color-secondary: #4E9F85;
+  --color-tertiary: #E6F7F0;
+  --color-neutral: #5A6E65;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-primary);
+  background-color: #F8FAF9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+/* Custom organic wave & subtle smooth curves */
+.wave-mask {
+  mask-image: radial-gradient(circle at 50% 0, black 70%, transparent 100%);
+}
